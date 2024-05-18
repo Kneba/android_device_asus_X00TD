@@ -10,3 +10,6 @@ genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:
 
 # ProcFS
 genfscon proc /sys/vm/dirty_writeback_centisecs                       u:object_r:proc_dirty:s0
+
+# Power
+genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sched:s0
