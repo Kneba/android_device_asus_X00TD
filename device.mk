@@ -150,9 +150,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libhidlmemory.vendor
 
-# Fast Charge HAL
+# Remove unwanted packages
 PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.qcom
+    RemovePackages
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -398,10 +398,6 @@ PRODUCT_COPY_FILES += \
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++_vendor
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Secure element
 PRODUCT_PACKAGES += \
