@@ -6,7 +6,7 @@ rm -rf device/asus/X00TD
 git clone --depth=1 https://github.com/Kneba/android_device_asus_X00TD device/asus/X00TD
 
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/Tiktodz/android_vendor_asus_X00TD -b udc-4.4 vendor/asus
+git clone --depth=1 https://github.com/Kneba/android_vendor_asus_X00TD -b 14 vendor/asus
 
 rm -rf hardware/qcom-caf/msm8998/audio
 rm -rf hardware/qcom-caf/msm8998/display
