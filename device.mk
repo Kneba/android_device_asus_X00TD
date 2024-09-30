@@ -296,12 +296,12 @@ PRODUCT_PACKAGES += \
 
 # OEM Unlock reporting
 ifneq (eng,$(TARGET_BUILD_VARIANT))
-ifneq (,$(wildcard vendor/lineage-priv/keys/releasekey.pk8))
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
+ifneq (,$(wildcard vendor/sakura-priv/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/sakura-priv/keys/releasekey
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.oem_unlock_supported=1
 endif
-ifneq (,$(wildcard vendor/lineage-priv/keys/otakey.x509.pem))
-PRODUCT_OTA_PUBLIC_KEYS := vendor/lineage-priv/keys/otakey.x509.pem
+ifneq (,$(wildcard vendor/sakura-priv/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/sakura-priv/keys/otakey.x509.pem
 endif
 endif
 
@@ -548,7 +548,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
--include vendor/lineage-priv/keys/keys.mk
+-include vendor/sakura-priv/keys/keys.mk
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
